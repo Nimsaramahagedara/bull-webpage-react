@@ -1,0 +1,4 @@
+.wheel-container{
+    transition: all cubic-bezier(0.47, 0, 0.745, 0.715);
+    transition-duration: 300ms;
+}
