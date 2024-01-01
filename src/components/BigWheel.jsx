@@ -12,7 +12,7 @@ const BigWheel = () => {
     useEffect(() => {
         const timeline = gsap.timeline();
         //  gsap.to('.inner-container', {delay:2,backgroundColor:'#0000', duration: 0.5, yoyo: true,})
-        gsap.to('.wheel-container', { delay: 2, duration: 0.2, backgroundImage: 'url(/src/assets/wheel-bg.png)' })
+        gsap.to('.wheel-container', { delay: 2, duration: 0.2, backgroundImage: 'url(/wheel-bg.png)' })
         timeline.to('.inner-container', {
             delay: 2, scale: 1, duration: 2, yoyo: true, ease: 'bounce', onComplete: () => {
                 gsap.to('.outer-wheel', { rotate: '180', duration: 2, repeat: -1, yoyo: true, repeatDelay: 0.5 });
@@ -44,7 +44,7 @@ const BigWheel = () => {
     }
 
     return (
-        <div className='fixed z-20 w-full min-h-screen flex justify-center items-center wheel-container bg-cover' style={{ backgroundImage: 'url(/src/assets/wheel-red-bg.svg)' }}>
+        <div className='fixed z-20 w-full min-h-screen flex justify-center items-center wheel-container bg-cover' style={{ backgroundImage: 'url(/wheel-red-bg.svg)' }}>
             <div className='w-full md:w-1/2 m-5 mx-auto relative inner-container scale-[200%] py-32 lg:py-0' >{/*style={{backgroundColor:'#2E0A0A'}}*/}
                 <div className='rounded-full overflow-hidden'>
                     <img src={outerWheel} alt="outer-wheel" className='w-full h-full object-contain outer-wheel' />
