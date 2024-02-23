@@ -4,3 +4,17 @@
 .red-bg{
     background-image: url('./assets/wheel-red-bg.svg');
 }
+
+@keyframes bouncer {
+    0%, 100% {
+        transform: translate(-50% ,-2px);
+        animation-timing-function: cubic-bezier(0.8,0,1,1);
+    }
+    50% {
+        transform: translate(-50%,0px);
+        animation-timing-function: cubic-bezier(0,0,0.2,1);
+    }
+}
+.bounce-animation {
+    animation: bouncer 1s infinite;
+}

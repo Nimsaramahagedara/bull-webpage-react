@@ -1,4 +1,4 @@
-# React + Vite + Tailwind css + GSAP Animations
+# React + Vite
 
-Deployed on azure
-https://salmon-river-0b865be10.4.azurestaticapps.net
+Deployed On 
+https://astrology-b6de.onrender.com
